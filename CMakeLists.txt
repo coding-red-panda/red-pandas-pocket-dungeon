@@ -12,6 +12,6 @@ FetchContent_Declare(SFML
     SYSTEM)
 FetchContent_MakeAvailable(SFML)
 
-add_executable(main src/main.cpp)
-target_compile_features(main PRIVATE cxx_std_17)
-target_link_libraries(main PRIVATE SFML::Graphics)
+add_executable(red-pandas-pocket-dungeon src/main.cpp)
+target_compile_features(red-pandas-pocket-dungeon PRIVATE cxx_std_17)
+target_link_libraries(red-pandas-pocket-dungeon PRIVATE SFML::Graphics SFML::Audio)
