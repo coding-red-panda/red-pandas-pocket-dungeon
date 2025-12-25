@@ -29,3 +29,8 @@ sudo apt install \
    libegl1-mesa-dev \
    libfreetype-dev
 ```
+
+## Credits
+
+* Tileset: https://kenney.nl/assets/tiny-dungeon
+* Amber sprite: https://elthen.itch.io/2d-pixel-art-red-panda-sprites
