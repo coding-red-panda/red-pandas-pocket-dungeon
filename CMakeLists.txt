@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.28)
-project(CMakeSFMLProject LANGUAGES CXX)
+project(red-pandas-pocket-dungeon LANGUAGES CXX)
 
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
 
@@ -12,6 +12,7 @@ FetchContent_Declare(SFML
     SYSTEM)
 FetchContent_MakeAvailable(SFML)
 
-add_executable(red-pandas-pocket-dungeon src/main.cpp)
-target_compile_features(red-pandas-pocket-dungeon PRIVATE cxx_std_17)
-target_link_libraries(red-pandas-pocket-dungeon PRIVATE SFML::Graphics SFML::Audio)
+# ---- Subprojects ----
+add_subdirectory(src/lib)
+add_subdirectory(src/game)
+add_subdirectory(src/editor)
