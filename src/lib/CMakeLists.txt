@@ -9,3 +9,9 @@ target_link_libraries(red-panda
         SFML::Graphics
         SFML::Audio
 )
+
+# Define the macro (NOT a library)
+target_compile_definitions(red-panda
+        PUBLIC
+        SFML_STATIC
+)
