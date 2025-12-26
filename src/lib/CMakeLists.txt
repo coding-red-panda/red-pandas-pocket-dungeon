@@ -1,4 +1,4 @@
-add_library(red-panda main.cpp)
+add_library(red-panda STATIC main.cpp)
 target_include_directories(red-panda PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})
 target_compile_features(red-panda PRIVATE cxx_std_17)
 
