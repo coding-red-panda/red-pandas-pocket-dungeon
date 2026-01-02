@@ -8,6 +8,8 @@ target_link_libraries(red-panda
     PUBLIC
         SFML::Graphics
         SFML::Audio
+    PRIVATE
+        nlohmann_json:nlohmann_json
 )
 
 # Define the macro (NOT a library)

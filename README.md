@@ -30,7 +30,15 @@ sudo apt install \
    libfreetype-dev
 ```
 
+## Dependencies
+The following dependencies are used in this project:
+
+* SFML 3
+* Nohlann JSON 3.12
+
 ## Credits
 
 * Tileset: https://kenney.nl/assets/tiny-dungeon
 * Amber sprite: https://elthen.itch.io/2d-pixel-art-red-panda-sprites
+* JSON Library: https://github.com/nlohmann/json
+* SFML: https://www.sfml-dev.org/

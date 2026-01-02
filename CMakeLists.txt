@@ -18,6 +18,7 @@ set(SFML_STATIC_LIBRARIES ON CACHE BOOL "" FORCE)
 # Optional: disable what you don't need
 set(SFML_BUILD_NETWORK OFF CACHE BOOL "" FORCE)
 
+# Download and build SFML from source.
 FetchContent_Declare(SFML
     GIT_REPOSITORY https://github.com/SFML/SFML.git
     GIT_TAG 3.0.2
@@ -25,6 +26,10 @@ FetchContent_Declare(SFML
     EXCLUDE_FROM_ALL
     SYSTEM)
 FetchContent_MakeAvailable(SFML)
+
+# Download and build json for C++ (using release source to keep size down)
+FetchContent_Declare(JSON URL https://github.com/nlohmann/json/releases/download/v3.12.0/json.tar.xz)
+FetchContent_MakeAvailable(JSON)
 
 # ---- Subprojects ----
 add_subdirectory(src/lib)
